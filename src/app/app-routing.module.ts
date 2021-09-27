@@ -10,6 +10,19 @@ const routes: Routes = [
     path: 'contact',
     loadChildren: () => import('./@public/pages/contact/contact.module').then(module => module.ContactModule)
   },
+  /*
+    Rutas para controlar posibles fallos de seguridad
+   */
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
