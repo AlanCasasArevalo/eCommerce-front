@@ -1,1 +1,9 @@
 @import "./../../../pages/admin.component";
+
+#sidebar-wrapper {
+  background-color: $admin-primary-color;
+}
+
+.sidebar-heading a {
+  color: whitesmoke;
+}
