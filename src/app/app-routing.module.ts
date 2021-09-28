@@ -10,14 +10,6 @@ const routes: Routes = [
     path: 'contact',
     loadChildren: () => import('./@public/pages/contact/contact.module').then(module => module.ContactModule)
   },
-  {
-    path: 'admin',
-    loadChildren: () => import('./@admin/pages/dashboard/dashboard.module').then(module => module.DashboardModule)
-  },
-  {
-    path: 'admin/users',
-    loadChildren: () => import('./@admin/pages/users/users.module').then(module => module.UsersModule)
-  },
   /*
     Rutas para controlar posibles fallos de seguridad
    */
