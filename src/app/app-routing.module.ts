@@ -2,14 +2,6 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
 const routes: Routes = [
-  {
-    path: 'home',
-    loadChildren: () => import('./@public/pages/home/home.module').then(module => module.HomeModule)
-  },
-  {
-    path: 'contact',
-    loadChildren: () => import('./@public/pages/contact/contact.module').then(module => module.ContactModule)
-  },
   /*
     Rutas para controlar posibles fallos de seguridad
    */
